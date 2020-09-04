@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Python</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+<nav id="navbar">
+  <header>History of Python</header>
+  <ul>
+    <li><a class="nav-link" href="#Who_created_python?">Who created python?</a></li>
+    <li><a class="nav-link" href="#What_led_Guido_to_create_python?">What led Guido to create python?</a></li>
+    <li><a class="nav-link" href="#How_the_name_python_came_about?">How the name python came about?</a></li>
+    <li><a class="nav-link" href="#Silent_features_of_python">Silent features of python</a></li>
+    <li><a class="nav-link" href="#Why_should_you_learn_python?">Why should you learn python?</a></li>
+    <li><a class="nav-link" href="#Create_your_first_program">Create your first program</a></li>
+  </ul>
+    </nav>
+<main id="main-doc">
+  <section class="main-section" id="Who_created_python?">
+    <header>Who created python?</header>
+    <article>
+      <p>
+        It was a Dutch programmer, Guido Van Rossum, who wrote Python as a hobby programming project back in the late 1980s. Since then, it has grown to become one of the most polished languages of the computing world.
+      </p>
+      <ul>
+        <li>
+          In February 2002 He received the Free Software Foundation Award.
+          </li>
+        <li>
+          From December 2005 till December 2012, He worked for Google. His first project was an internal code review tool, Mondrian. 
+        </li>
+        <li>
+          From January 2013 through October 2019, He worked for Dropbox, most recently He worked on mypy and on migrating over 5 million lines of server-side code from Python 2 to Python 3.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="What_led_Guido_to_create_python?">
+    <header>What led Guido to create python?</header>
+    <article>
+      <p>In his own words, Guido revealed the secret behind the inception of Python. He started working on it as a weekend project utilizing his free time during Christmas in Dec’1989. He originally wanted to create an interpreter, a descendant of the ABC programming language of which he was a contributing developer. And we all know that it was none other than Python, which gradually transformed into a full-fledged programming language.</p>
+    </article>
+  </section>
+  <section class="main-section" id="How_the_name_python_came_about?">
+    <header>How the name python came about?</header>
+    <article>
+      <p>
+        Guido initially thought the Unix/C hackers to be the target users of his project. And more importantly, he was fond of watching the famous comedy series [The Monty Python’s Flying Circus]. Thus, the name Python struck his mind as not only has it appealed to his taste but also his target users.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Silent_features_of_python">
+    <header>Silent features of python</header>
+    <article>
+      <ul>
+        <li>
+          <b>Code Quality: </b>Python code is highly readable, which makes it more reusable and maintainable. It has broad support for advanced software engineering paradigms such as object-oriented (OO) and functional programming.
+          </li>
+        <li>
+          <b>Developer Productivity:  </b>Python has a clean and elegant coding style. It uses an english-like syntax and is dynamically-typed. So, you never declare a variable. A simple assignment binds a name to an object of any type. Python code is significantly smaller than the equivalent C++/Java code. It implies there is less to type, limited to debug, and fewer to maintain. Unlike compiled languages, Python programs don’t need compiling and linking, which further boosts the developer’s productivity.
+          </li>
+        <li>
+          <b>Code Portability:  </b>Since Python is an interpreted language, so the interpreter has to manage the task of portability. Also, Python’s interpreter is smart enough to execute your program on different platforms to produce the same output. So, you never need to change a line in your code.
+          </li>
+           <li><b>Built-in and External Libraries:  </b>Python packages a large no. of the prebuilt and portable set of libraries. You can load them as and when needed to use the desired functionality.
+          </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Why_should_you_learn_python?">
+      <header>Why should you learn python?</header>
+    <article>
+    <p>Writing Python code is so much fun that you won’t feel it like a routine programming task. Here are a bunch of compelling reasons for you to learn Python and read this Python tutorial. </p>
+    <b>
+      Nonrestrictive Programming Syntax
+    </b>
+    <p>
+      Python is the language that even a non-programmer can understand. It is a highly readable, problem-oriented language that lets you focus on writing the logic instead of getting into the syntax nitty-gritty.
+
+Here is a sample program for implementing an Interest Calculator. By looking at it, you can feel how easy it is to write and understand the code in Python.
+      <code>print('Interest Calculator:')</code>
+
+        <code>amount = float(input('Principal amount ?'))</code>
+  <code>roi = float(input('Rate of Interest ?'))</code>
+  <code>yrs = int(input('Duration (no. of years) ?'))</code>
+
+  <code>total = (amount * pow(1 + (roi/100), yrs))</code>
+  <code>interest = total - amount</code>
+<code>print('\nInterest = %0.2f' %interest)</code>
+    </p>
+    </article>
+  </section>
+  <section class="main-section" id="Create_your_first_program"><header>Create your first program</header>
+    <article>
+      <p>
+      Usually, it is the “Hello, World!” program which every language recommends as a starting point to learn Programming. It is a simple program that prints the “Hello, World!” message on the standard output.
+
+It obviously would be very trivial if we write it in Python, just one statement as the print(“Hello, World!”). Hence, we’ll use the Interest Calculator program for illustration.
+      </p>
+      <b>Program Description</b>
+      <p>This program computes the interest accrued over the specified no. of years on the principal amount with one year as a fixed value for the compound interval.</p>
+        <b>Program Source Code</b><code>print('Interest Calculator:')
+amount = float(input('Principal amount ?'))
+roi = float(input('Rate of Interest ?'))
+years = int(input('Duration (no. of years) ?'))
+total = (amount * pow(1 + (roi/100), years))
+interest = total - amount
+print('\nInterest = %0.2f' %interest)</code>   
+      <b>Let’s Dissect the Program Step by Step</b>
+      <ul>
+        <li>Step 1<p> In the first line, we are calling the print() function to display an informational message. It’s the same as printing like the “Hello, World!”.</p></li>
+        <li>Step 2<p> In the next three lines, we are using the following variables to store the input provided by the user.
+
+The variable ‘amount’ represents the principal amount borrowed.
+
+Another one is the ‘roi,’ which represents the rate of interest levied on the principal amount.
+
+The next identifier is ‘years,’ which is the no. of years representing the borrowing period.
+
+Also, you must note here that we are using Python’s input() function to prompt the user to enter the values. Furthermore, you can observe that we’ve used Python’s conversion operators (int() and float()) in this code.
+
+int(value) -> It converts any value to a plain integer.
+
+float(value) -> It converts a value to a float type number.
+
+So far, we’ve covered the first four lines. Let’s continue exploring the remainder of the program.<p></li>
+        <li>Step 3<p> In the fifth line of code, we are using a variable called “total” to store the result of a complicated assignment.
+
+The total -> It represents the total amount to be paid after the borrowing period.
+
+But this line is a little different from the previous ones. It is because the first line was an output statement, and the next three were the simple assignment operations.</p></li>
+        <li>Step 4<p> In the sixth line, we are using Python’s subtraction operator (-) to calculate the interest amount.</p></li>
+        <li>Step 5<p> Finally, there is a print statement displaying the interest amount. Since it is a float value, so the print() function will show the full number by default. Hence, we are using the floating-point format specifier “%0.2f” in print() function so that we can limit the printing up to two decimal points.</p></li>
+      </ul>
+    </article>
+  </section>
+</main>
+<!-- partial -->
+  
+</body>
+</html>
