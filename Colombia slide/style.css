@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html{
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  background: #f5f2f2;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 80px;
+    color: #5e5a5a;
+}
+.wheel{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 90px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    animation: move 20s infinite linear;
+    transform-style: preserve-3d;
+}
+.content:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.content photo{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #ffffff;
+    transition: all 300ms;
+}
+.content photo:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+.content photo:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.content photo:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.content photo:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.content photo:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.content photo:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.content photo:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.content photo:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.content photo:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.content photo:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.content photo:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+.content img{
+    width: 100%;
+    transition: all 300ms;
+}
+.content img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+@keyframes move{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
