@@ -1,0 +1,83 @@
+body {
+  margin:0;
+  padding:0;
+  background: #f5f2f2;
+}
+
+.photo{
+  position:absolute;
+  width:200px;
+  height:230px;
+  align-self: center;  
+  box-shadow: 2px 1px 5px 1px #121212;
+  background-size:cover;
+  background-position:center; 
+  display:none;   
+} 
+
+h1 {
+  font-size: 2em;
+  padding: 0px;
+  color: #5e5a5a;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Poppins", sans-serif;
+  width: 700px;
+  height: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.next{
+  animation: nextAnimate 2s linear; 
+}
+
+.photo1{
+  background-image:url(https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg);   
+}
+
+.photo2{
+  background-image:url(https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg);   
+}
+
+.photo3{
+  background-image:url(https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg); 
+}
+
+.photo:before{
+  content:"";
+  position:absolute;
+  width: 0px;
+  height:230px;
+  margin-left:240px;
+  background-color:rgba(0,0,0,0.3);
+  transform:skewY(50deg);
+}
+.photo:after{
+  content:"";
+  position:absolute;
+  width:200px;
+  height:3px;
+  margin-top:-3px;
+  margin-left:2px;
+  background-color:rgba(0,0,0,0.2);
+  transform: skewX(-50deg);
+}
+@keyframes nextAnimate{
+            0%{
+                margin-left:520px
+            }
+            100%{
+                margin-left:0;
+             }
+        }
