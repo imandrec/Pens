@@ -1,0 +1,33 @@
+html{
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg)
+}
+.moon {
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:300px;
+    height:300px;
+    background-image:url( https://cdn.pixabay.com/photo/2017/05/15/07/20/moon-2313871_1280.jpg);
+    background-size:cover;
+    border-radius:50%;
+    position:absolute;
+    margin:auto;
+    box-shadow:-30px -30px 0 0 rgba(0,0.5,0.5,0.5) inset;
+    -webkit-animation:rotation 10s infinite linear;
+    -moz-animation:rotation 10s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+   from {
+       background-position:left center;
+   }
+   to {
+       background-position: -200px center;
+   }
+}
