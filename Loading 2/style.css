@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html{
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  background: #f5f2f2;
+}
+h1 {
+  font-size: 2em;
+  padding: 20px 20px 10px 0px;
+  color: #5e5a5a;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.animations{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Poppins", sans-serif;
+  width: 700px;
+  height: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.box {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 13px;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #d8d8d8;
+}
+.pre1 .wheel {
+  animation: loading1 1.5s 0.5s cubic-bezier(0.2, 0.4, 0.6, 0.8) infinite;
+}
+.wheel {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  padding: 20px;
+  border: 5px dashed #5e5a5a;
+  border-radius: 50px;
+}
+.pre2 .ball2 {
+  animation: loading2 1s linear infinite;
+}
+.ball1 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid #5e5a5a;
+  border-radius: 50px;
+}
+.ball2 {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+}
+.ball3 {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #5e5a5a;
+}
+.pre3 .letter {
+  animation-name: loading3;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+
+.l-3 {
+  animation-delay: 0.72s;
+}
+.l-4 {
+  animation-delay: 0.84s;
+}
+.l-5 {
+  animation-delay: 0.96s;
+}
+.l-6 {
+  animation-delay: 1.08s;
+}
+.l-7 {
+  animation-delay: 1.2s;
+}
+.l-8 {
+  animation-delay: 1.32s;
+}
+.l-9 {
+  animation-delay: 1.44s;
+}
+.l-10 {
+  animation-delay: 1.56s;
+}
+.letters {
+  width: 100%;
+  height: 20px;
+  margin: 20px;
+  padding: 20px 0px 10px 0px;
+}
+.letter {
+  float: left;
+  font-size: 20px;
+  color: #5e5a5a;
+}
+@keyframes loading1 {
+  0 {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading2 {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
