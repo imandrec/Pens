@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="pagehead">
+<div id="topbar1">
+<div id="topbar2">
+  <div id="OuterContentPane">
+            <div id="loginBox" class="loginBox">
+                
+                E-mail:<br />
+                <input name="LoginNameTextBox" type="text" maxlength="254" id="LoginNameTextBox" onchange="ClearValidation(&#39;LoginNameTextBox_NotificationID&#39;)" />
+                <br />
+                Password:<br />
+                <input name="PasswordTextBox" type="password" maxlength="50" id="PasswordTextBox" onchange="ClearValidation(&#39;PasswordTextBox_NotificationID&#39;)" />
+                <br />
+                <input id="ZCheckBox1" type="checkbox" name="ZCheckBox1" /><label for="ZCheckBox1">Remember me</label>
+                <br />
+                <br />
+                <input type="submit" name="SigninBtn" value="Login" id="SigninBtn" />
+                &nbsp;&nbsp;&nbsp;
+					<span id="Message" class="ErrorMessage"></span>
+                <br />
+                <a id="PasswordReminder" href="/Login/ForgotPassword.aspx">Forgot your password?</a>
+            </div>
+            <br />
+    <div id="QuickViewDetails" class="loginBox">
+                <div id="ViewShipmentDetails">
+                   
+                    <br />
+                    <br />
+                </div>
+                <div id="ViewContainerDetails">
+     Invoice number<br />
+                    <input name="ContainerNumberTextBox" type="text" maxlength="20" id="ContainerNumberTextBox" onchange="ClearValidation(&#39;ContainerNumberTextBox_NotificationID&#39;)" />
+                    <br />
+                    <br />
+                </div>
+                <input type="submit" name="FindBtn" value="Find" id="FindBtn" />
+                &nbsp;&nbsp;&nbsp;
+					<span id="QuickViewMessage" class="ErrorMessage"></span>
+
+            </div>
+            <br />
+            <br />
+            
+        </div>
+    <div id="_LightBox" class="LightBox" style="display:none;position:absolute;">
+	<div id="TitleBox" class="LightBoxTitle">
+
+	</div><table class="LightBoxMessage">
+		<tr>
+			<td align="center" valign="top"><div id="MessageBox">
+
+			</div></td>
+		</tr><tr>
+			<td align="center" valign="middle"><div id="ButtonBox">
+
+			</div></td>
+		</tr>
+	</table>
+  </div>
+<!-- partial -->
+  
+</body>
+</html>
