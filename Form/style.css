@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body
+{
+ font-family: "Poppins", sans-serif;
+ background-color: #f5f2f2;
+ padding: 0;
+ margin: 0;
+ font-size: 11px;
+}
+#OuterContentPane 
+{
+	padding: 15px 30px 20px 30px;
+	background: none;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+	border-left-color: #5e5a5a;
+	border-right: 0px solid;
+  border-right-color: ##5e5a5a;
+}
+
+.loginBox
+{
+  margin: auto;
+  width: 50%;
+	border: 2px solid #5e5a5a;
+  line-height: 25px;
+	background: #ffffff;
+	color: #5e5a5a;
+	padding: 20px 30px 20px 30px;
+	width: 205px;
+        border-radius: 10px;
+}
+
+.loginBox input[type="text"], .loginBox input[type="password"]
+{
+  width: 180px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.loginBox a, .loginBox a:visited
+{
+  color: #5e5a5a;
+  display:block;
+  text-align: center;
+}
+
+.loginBox a:hover
+{
+	color: #000000;
+}
+#SigninBtn{
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 20px;
+  color: #ffffff;
+  background-color: #5e5a5a;
+}
+
+#LoginNameTextBox{
+background: #5e5a5a;
+  opacity: 0.1;
+  border: 0px;
+}
+
+.LoginBody{
+  background-color: green;
+}
+
+#PasswordTextBox{
+background: #5e5a5a;
+  opacity: 0.1;
+  border: 0px;
+}
+
+#ContainerNumberTextBox{
+  background: #5e5a5a;
+  opacity: 0.1;
+  border: 0px;
+}
+
+#FindBtn{
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 20px;
+  color: #ffffff;
+  background-color:#5e5a5a;
+}
