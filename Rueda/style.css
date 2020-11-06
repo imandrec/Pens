@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  height: 480px;
+}
+
+#learn-more {
+  fill-opacity: 0;
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 2;
+  border-radius: 5px;
+  stroke-linejoin: round;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+  cursor: pointer;
+}
+#learn-more:hover {
+  fill-opacity: 1;
+}
+#learn-more:hover ~ .learn-more-text {
+  fill: #3b5998;
+}
+
+.learn-more-text {
+  font-family: 'Roboto';
+  fill: #fff;
+  pointer-events: none;
+  font-size: 14px;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.center {
+  fill: #3e9fbe;
+}
+
+.pointer {
+  fill: #fff;
+  stroke: #3b8fc0;
+  stroke-width: 2;
+}
+
+.nav-copy {
+  font-family: 'Roboto';
+  fill: #fff;
+  fill-opacity: 1;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+.nav-copy.changing {
+  fill-opacity: 0;
+}
+
+.service {
+  cursor: pointer;
+}
+.service text {
+  font-size: 14px;
+  font-family: 'Roboto';
+  text-anchor: middle;
+}
+.service .icon-wrapper {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+.service .icon-wrapper, .service .icon-wrapper > * {
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+.service circle {
+  fill: #3e9fbe;
+}
+.service circle.shadow {
+  fill-opacity: 0;
+  -webkit-filter: url(#service-shadow);
+          filter: url(#service-shadow);
+}
+.service use {
+  fill: #fff;
+}
+.service text {
+  fill: #4d4d4d;
+}
+.service.active .icon-wrapper, .service:hover .icon-wrapper {
+  -webkit-transform: scale(1.15) translateY(-5px);
+          transform: scale(1.15) translateY(-5px);
+}
+.service.active .icon-wrapper, .service.active .icon-wrapper > *, .service:hover .icon-wrapper, .service:hover .icon-wrapper > * {
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+}
+.service.active .icon-wrapper circle.shadow, .service:hover .icon-wrapper circle.shadow {
+  fill-opacity: 0.4;
+}
+.service.active text, .service:hover text {
+  fill: #005fa4;
+  font-weight: bold;
+}
