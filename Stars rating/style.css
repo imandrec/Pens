@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+.stars{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 100vh;
+}
+
+.stars__star-icon{
+    stroke:#EFCE4A;
+    stroke-width: 2px;
+    fill: transparent;
+    transition: .1s all;
+}
+
+.stars__star{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.stars__checkbox{
+    position: absolute;
+    top: -9999px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.stars__star:hover > .stars__star-icon{
+    fill: #EFCE4A;
+}
+
+.stars__star:hover ~ .stars__star > .stars__star-icon {
+    fill: #EFCE4A;
+}
+
+.stars__checkbox:checked + .stars__star > .stars__star-icon {
+    fill: #EFCE4A;
+}
+
+.stars__checkbox:checked ~ .stars__star > .stars__star-icon {
+    fill: #EFCE4A;
+}
