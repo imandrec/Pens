@@ -47,6 +47,7 @@ body {
   animation-delay: 1s;
 }
 
+
 @keyframes rotate {
   10% {
     transform: rotate(45deg);
