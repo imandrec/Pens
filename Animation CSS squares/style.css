@@ -27,6 +27,7 @@ body {
   z-index: 1;
   position: relative;
 }
+
 .square:nth-child(5n + 1) {
   animation: rotate linear 5s infinite;
 }
